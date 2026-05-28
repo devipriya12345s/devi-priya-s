@@ -1,0 +1,97 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+      body{
+       font-family: Arial;
+       margin: 40px;
+width:90%;
+
+        }
+       h1{ 
+          text-align:center;
+          background-color:black;
+          color:white;
+       font-size:100px;
+       font-family:verdana;
+}
+       .div{
+           display:block;
+
+      
+}
+    
+    .img1{
+        margin-left:200px;
+        width:70%;
+        height:50%;
+        margin-bottom:100px;
+
+}
+    .container{
+        display:flex;
+        gap:15px;
+    }
+    .img2{
+        width:400px;
+        height:auto;
+          
+          border-radius:50%;
+    }
+       p1{
+    margin:40px;
+    font-size:30px;
+    color:red;
+    font-weight:100;
+    font-family:Georgia;
+    margin-bottom:20px;
+    
+}
+     @media (max-width:900px){
+      body{
+           width:85%;
+           margin:20px auto;}
+          img {
+             width:60%;
+             }}
+     @media (max-width:600px){
+     body{
+          width:100%;
+}}
+</style>
+</head>
+
+<body>
+<h1>UNIQOR</h1>
+<p1> Wear Your Idea. Wear Uniqor.
+
+<br>  </p1>
+
+<div class="div">
+<img src="img1.jpeg" class="img1" id="slide">
+
+
+</div>
+<br>
+<br>
+<div class="container">
+<img src="image 4.jpeg" class="img2">
+
+<p2><p1><br><br>wear your idea ! wear uniqor</p1> <br><br>Uniqor is a world wide truted clothing brand .A priemier product from uniqor industries.</p2>
+</div>
+<script>
+let array=["img1.jpeg","img2.jpeg","img3.jpeg"];
+let i=0;
+setInterval(()=>{
+        i=(i+1)%array.length;
+       document.getElementById("slide").src= array[i];
+},5000);
+</script>
+</body>
+</html>
+
+
+
+
+
+
